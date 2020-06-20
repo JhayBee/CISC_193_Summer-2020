@@ -83,7 +83,7 @@
             // txtLength
             // 
             this.txtLength.Location = new System.Drawing.Point(406, 156);
-            this.txtLength.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtLength.Margin = new System.Windows.Forms.Padding(6);
             this.txtLength.Name = "txtLength";
             this.txtLength.Size = new System.Drawing.Size(196, 33);
             this.txtLength.TabIndex = 4;
@@ -91,7 +91,7 @@
             // txtWidth
             // 
             this.txtWidth.Location = new System.Drawing.Point(406, 256);
-            this.txtWidth.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtWidth.Margin = new System.Windows.Forms.Padding(6);
             this.txtWidth.Name = "txtWidth";
             this.txtWidth.Size = new System.Drawing.Size(196, 33);
             this.txtWidth.TabIndex = 5;
@@ -99,7 +99,7 @@
             // txtArea
             // 
             this.txtArea.Location = new System.Drawing.Point(406, 357);
-            this.txtArea.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtArea.Margin = new System.Windows.Forms.Padding(6);
             this.txtArea.Name = "txtArea";
             this.txtArea.ReadOnly = true;
             this.txtArea.Size = new System.Drawing.Size(196, 33);
@@ -108,7 +108,7 @@
             // txtPerimeter
             // 
             this.txtPerimeter.Location = new System.Drawing.Point(406, 459);
-            this.txtPerimeter.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtPerimeter.Margin = new System.Windows.Forms.Padding(6);
             this.txtPerimeter.Name = "txtPerimeter";
             this.txtPerimeter.ReadOnly = true;
             this.txtPerimeter.Size = new System.Drawing.Size(196, 33);
@@ -117,17 +117,19 @@
             // btnCalculate
             // 
             this.btnCalculate.Location = new System.Drawing.Point(144, 549);
-            this.btnCalculate.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnCalculate.Margin = new System.Windows.Forms.Padding(6);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(150, 46);
             this.btnCalculate.TabIndex = 8;
             this.btnCalculate.Text = "Calculate";
             this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
             // btnExit
             // 
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Location = new System.Drawing.Point(452, 549);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(6);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(150, 46);
             this.btnExit.TabIndex = 9;
@@ -136,8 +138,10 @@
             // 
             // Form1
             // 
+            this.AcceptButton = this.btnCalculate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(747, 665);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnCalculate);
@@ -150,7 +154,7 @@
             this.Controls.Add(this.lblWidth);
             this.Controls.Add(this.lblLength);
             this.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
             this.Text = "Area and Perimeter";
             this.ResumeLayout(false);

@@ -16,5 +16,11 @@ namespace Project_1
         {
             InitializeComponent();
         }
+
+        private void btnCalculate_Click(object sender, EventArgs e)
+        {
+            decimal length = Convert.ToDecimal(txtLength.Text);
+            decimal width = Convert.ToDecimal(txtWidth.Text);
+        }
     }
 }
